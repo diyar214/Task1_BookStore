@@ -79,7 +79,7 @@ class Books
     if (listBook.isEmpty) {
       print('There are no Books!');
     }else {
-      print('Enter the book name: ');
+      print('Enter the book name you want to update: ');
       String? userInput = stdin.readLineSync();
       for (var item in listBook) {
         if (item.Name == userInput) {
@@ -88,7 +88,6 @@ class Books
         }
       }
     }
-
     print('Enter book name: ');
     String name = stdin.readLineSync()!;
 
